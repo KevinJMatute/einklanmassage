@@ -14,7 +14,7 @@ main,
 header {
   padding-left: 3.2rem;
 }
-header{
+header {
   height: 100vh;
 }
 
@@ -120,21 +120,21 @@ img {
   background-color: hsla(142, 84%, 29%, 0.89);
 }
 .conteiner__angebote--title {
-  padding-top: 35px;
-  margin-bottom: 60px;
+  padding-top: 1em;
+  margin-bottom: 1.5em;
   color: black;
 }
 .conteiner__table {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
+  margin-bottom: 1em;
   color: rgb(202, 231, 34);
 }
 table,
 th,
 td {
   border-collapse: collapse;
-  padding: 0.5em 1em;
+  padding: 0.3em 1em;
 }
 .conteiner__table--dark {
   background-color: hsla(141, 63%, 19%, 0.712);
