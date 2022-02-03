@@ -29,8 +29,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
-  height: 100vh;
+  justify-content: space-evenly;
+  height: 101vh;
   padding-left: 0.4rem;
   padding-right: 0.4rem;
   background: linear-gradient(180deg, #0c8739ee, #f37335);
@@ -134,7 +134,7 @@ table,
 th,
 td {
   border-collapse: collapse;
-  padding: 0.3em 1em;
+  padding: 0.5em 1em;
 }
 .conteiner__table--dark {
   background-color: hsla(141, 63%, 19%, 0.712);
