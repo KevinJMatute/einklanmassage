@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  max-width: 100vw;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  font-family: "Source Sans Pro", sans-serif;
+}
+main,
+header {
+  padding-left: 3.2rem;
+}
+
+img {
+  max-width: 100%;
+}
+.logo__olio {
+  display: none;
+}
+.nav ul {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 100vh;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  background: linear-gradient(180deg, #0c8739ee, #f37335);
+  box-shadow: 0px 20px 20px #4e4845b7;
+  border-right: 1.5px solid #4e48456e;
+  z-index: 100;
+}
+.nav ul li {
+  list-style: none;
+}
+.nav ul li a {
+  text-decoration: none;
+}
+.nav__text {
+  display: none;
+}
+.nav__icon {
+  width: 2.2rem;
+  filter: invert(99%) sepia(99%) saturate(245%) hue-rotate(335deg)
+    brightness(112%) contrast(96%);
+  transition: all 0.1s ease-in-out;
+}
+.nav__icon:active {
+  position: relative;
+  transform: scale(1.5) translateX(40px) rotate(10deg) translateY(10px);
+  filter: invert(61%) sepia(93%) saturate(3265%) hue-rotate(341deg)
+    brightness(102%) contrast(91%);
+}
+.title__conteiner {
+  text-align: center;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+.title {
+  font-size: 3.5rem;
+  font-family: "Allura", cursive;
+  color: #0c8739ee;
+}
+.title__sub {
+  font-size: 1.3rem;
+}
+.flowers {
+  margin-bottom: 55px;
+}
+.header__name {
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: 1px underline;
+  font-family: "Allura", cursive;
+}
+.conteiner__presentation--title {
+  text-align: center;
+  margin: 20px 20px;
+  margin-bottom: 0;
+  font-family: "Allura", cursive;
+  font-size: 1.7rem;
+  color: #0c8739ee;
+}
+.conteiner__presentation--description {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 2em;
+}
+.conteiner__presentation--foto {
+  border-radius: 45%;
+  transform: scale(0.9);
+}
+.conteiner__presentation--text {
+  padding: 5px 20px;
+  line-height: 1.5;
+}
+.conteiner__presentation--sub-title {
+  text-align: center;
+  padding: 20px 20px;
+  margin-bottom: 10px;
+}
+.paralax {
+  width: 100%;
+  height: 35vh;
+  background-image: url(/Assets/background.jpg);
+  background-position: center;
+  background-size: 1420px;
+  background-attachment: fixed;
+}
+.conteiner__price {
+  height: 100vh;
+  background-color: hsla(142, 84%, 29%, 0.89);
+}
+.conteiner__angebote--title {
+  padding-top: 35px;
+  margin-bottom: 60px;
+  color: black;
+}
+.conteiner__table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  color: rgb(202, 231, 34);
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+  padding: 0.5em 1em;
+}
+.conteiner__table--dark {
+  background-color: hsla(141, 63%, 19%, 0.712);
+  color: whitesmoke;
+}
+.conteiner__table--center {
+  text-align: center;
+}
+.conteiner__price--p {
+  text-align: center;
+  color: whitesmoke;
+}
+.conteiner__fotos-2 {
+  margin: 15px 10px;
+  text-align: center;
+}
+.fotos {
+  border-top-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  box-shadow: 5px 5px 10px black;
+}
+.conteiner__kontak {
+  height: 100vh;
+  text-align: start;
+  padding-bottom: 2.5rem;
+  background-color: hsla(142, 84%, 29%, 0.89);
+}
+.conteiner__footer,
+.footer {
+  text-align: center;
+  color: whitesmoke;
+}
+.conteiner__footer {
+  padding-top: 40px;
+}
+.conteiner__kontak--adress {
+  display: block;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: whitesmoke;
+}
+.conteiner__kontak--number {
+  margin-top: 10px;
+}
+.conteiner__kontak--info2,
+.social {
+  text-align: start;
+  padding-left: 20px;
+  color: whitesmoke;
+}
+.info2 {
+  margin-top: 20px;
+}
+
+/************meadia tablet*********************/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main,
+  header {
+    padding-left: 0rem;
+  }
+
+  .nav ul {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    background: linear-gradient(90deg, #0c8739ee, #f37335);
+    box-shadow: 0px 10px 30px #4e4845b7;
+    border-right: none;
+  }
+
+  .nav__text {
+    display: inline-block;
+    padding: 15px 0px;
+    font-size: 1.3em;
+    text-decoration: underline;
+    color: whitesmoke;
+  }
+  .nav__icon {
+    display: none;
+  }
+  header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .logo__olio {
+    display: block;
+    transform: scale(0.7);
+  }
+  .title__conteiner {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+    margin-top: 5%;
+  }
+  .header__name {
+    font-size: 4.5rem;
+  }
+  .conteiner__presentation--title {
+    padding-top: 100px;
+    margin: 0;
+    margin-bottom: 100px;
+    font-size: 3rem;
+  }
+
+  .conteiner__presentation--description {
+    display: block;
+    margin-bottom: 100px;
+  }
+  .conteiner__presentation--foto {
+    width: 45vw;
+    border-radius: 50%;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 15px;
+    float: right;
+  }
+  .conteiner__presentation--sub-title {
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+  }
+  .conteiner__presentation--text {
+    display: inline-block;
+    width: 45vw;
+    padding: 5px 20px;
+    margin-left: 10px;
+    line-height: 2;
+  }
+  .paralax {
+    width: 100%;
+    height: 35vh;
+    background-image: url(/Assets/background.jpg);
+    background-position: center;
+    background-size: 1420px;
+    background-attachment: fixed;
+  }
+  .conteiner__angebote--title {
+    padding-top: 120px;
+    margin-bottom: 100px;
+    font-size: 3.5rem;
+    color: black;
+  }
+  .conteiner__table {
+    width: 85%;
+    height: 40%;
+    margin-bottom: 100px;
+    color: rgb(202, 231, 34);
+  }
+  table,
+  th,
+  td {
+    padding-left: 20px;
+    font-size: 1.5rem;
+  }
+
+  .conteiner__price--p {
+    font-size: 1.3rem;
+  }
+  .conteiner__fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .conteiner__fotos-2 {
+    width: 390px;
+    height: 580px;
+    margin: 5px;
+    padding: 15px 5px;
+  }
+
+  .fotos {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .conteiner__kontak {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+  .conteiner__kontak {
+    height: 100vh;
+    text-align: start;
+    padding-bottom: 2.5rem;
+    background-color: hsla(142, 84%, 29%, 0.89);
+  }
+  .conteiner__kontak--adress,
+  .conteiner__kontak--info2,
+  .social {
+    width: auto;
+    font-size: 2.1rem;
+  }
+  .footer {
+    font-size: 5rem;
+  }
+  .footer2 {
+    font-size: 2rem;
+  }
+}
