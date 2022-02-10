@@ -10,10 +10,7 @@ body {
   background-color: whitesmoke;
   font-family: "Source Sans Pro", sans-serif;
 }
-main,
-header {
-  padding-left: 3.2rem;
-}
+
 header {
   height: 100vh;
 }
@@ -24,41 +21,58 @@ img {
 .logo__olio {
   display: none;
 }
-.nav ul {
+
+.nav {
   position: fixed;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5em 2em;
+  z-index: 20;
+  background-image: linear-gradient(90deg, #0c8739ee, #f37335);
+}
+.nav ul {
+  display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  height: 101vh;
-  padding-left: 0.4rem;
-  padding-right: 0.4rem;
-  background: linear-gradient(180deg, #0c8739ee, #f37335);
-  box-shadow: 0px 20px 20px #4e4845b7;
-  border-right: 1.5px solid #4e48456e;
-  z-index: 100;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 95vh;
+  width: 100%;
+  transform: translatex(-100vh);
+  opacity: 0;
+  transition: all 0.6s ease-out;
+  background-color: rgba(19, 44, 36, 0.644);
 }
-.nav ul li {
-  list-style: none;
+.menu:checked ~ ul {
+  opacity: 1;
+  transform: none;
 }
-.nav ul li a {
-  text-decoration: none;
-}
-.nav__text {
+.menu {
   display: none;
 }
-.nav__icon {
-  width: 2.2rem;
-  filter: invert(99%) sepia(99%) saturate(245%) hue-rotate(335deg)
-    brightness(112%) contrast(96%);
-  transition: all 0.1s ease-in-out;
+
+.nav li {
+  list-style: none;
 }
-.nav__icon:active {
-  position: relative;
-  transform: scale(1.5) translateX(40px) rotate(10deg) translateY(10px);
-  filter: invert(61%) sepia(93%) saturate(3265%) hue-rotate(341deg)
-    brightness(102%) contrast(91%);
+.nav a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: black;
+}
+
 .title__conteiner {
   text-align: center;
   padding-top: 3rem;
@@ -97,6 +111,7 @@ img {
 .conteiner__presentation--foto {
   border-radius: 45%;
   transform: scale(0.9);
+  z-index: 10;
 }
 .conteiner__presentation--text {
   padding: 5px 20px;
