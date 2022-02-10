@@ -21,7 +21,7 @@ img {
 .logo__olio {
   display: none;
 }
-
+/* ------------inizio nav--------------*/
 .nav {
   position: fixed;
   display: flex;
@@ -30,6 +30,7 @@ img {
   width: 100%;
   padding: 0.3em 2em;
   z-index: 20;
+  box-shadow: inset 0px -1px 3px rgba(0, 0, 0, 0.733), 0px 2px 5px rgba(0, 0, 0, 0.733);
   background-image: linear-gradient(90deg, #0c8739ee, #f37335);
 }
 .nav ul {
@@ -46,7 +47,7 @@ img {
   transform: scale(0, 1);
   transform-origin: left;
   transition: all 0.35s ease-in-out;
-  background-color: rgba(19, 44, 36, 0.644);
+  background-color: rgba(25, 63, 51, 0.644);
 }
 .menu:checked ~ ul {
   transform: scale(1, 1);
@@ -62,13 +63,14 @@ img {
 .nav a {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 700;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out 0.25s;
+  transition: opacity 0.15s ease-in-out;
 }
 .menu:checked ~ ul a {
   opacity: 1;
+  transition: opacity 0.3s ease-in-out 0.22s;
 }
 .hamburger {
   cursor: pointer;
@@ -81,7 +83,7 @@ img {
   border-radius: 20px;
   background-color: black;
 }
-
+/* ------------fine nav--------------*/
 .title__conteiner {
   text-align: center;
   padding-top: 3rem;
